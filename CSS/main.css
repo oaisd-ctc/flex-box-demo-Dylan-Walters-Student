@@ -37,3 +37,8 @@ hr {
 #flex-column {
     flex-direction: column;
 }
+
+#hr {
+    width: 100%;
+    max-width: 100%;
+}
