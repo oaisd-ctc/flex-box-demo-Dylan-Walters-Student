@@ -10,7 +10,7 @@
 
     <body>
         <div class="text"><h1>Flex Containers</h1></div>
-        <hr id="hr">
+        <hr class="hr">
 
     <div class="Flex-Wrap">
         <h2 class="text">Flex Wrap</h2>
@@ -18,7 +18,8 @@
         <h4 class="text">Flex wrap simply moves each element to the next line avalible in a box if the container becomes too small.
             <br>
             <br>Change the width of your bowser. This should move the blocks closer to one another. 
-            <br>Once it gets too close it will be moved to the next line.
+            <br>Once it gets too close it will be moved to the next line (The order will changed based on the value you add)
+            <br>Nowrap is the defult value the flex container has but you can change it with Wrap, and Wrap-reverse.
             <br>
         </h4>
         <div class="flex-container" id="flex-wrap">
@@ -37,11 +38,33 @@
         <h3 class="text">Stacking Items? Order it with Flex Direction!</h3>
         <h4 class="text">Flex wrap simply moves each element to the next line avalible in a box if the container becomes too small.
             <br>
-            <br>Change the width of your bowser. This should move the blocks closer to one another. 
-            <br>Once it gets too close it will be moved to the next line.
+            <br> Flex Direction can has a miltitude of values you can apply to it. 
+            <br> These values include column, column-reverse, row, and row-reverse.
+            <br> This container used the Row-reverse values.
             <br>
         </h4>
-            <div class="flex-container">
+            <div class="flex-container" id="flex-row-reverse">
+            <div class="flex-box">1</div>
+            <div class="flex-box">2</div>
+            <div class="flex-box">3</div>
+            <div class="flex-box">4</div>
+            <div class="flex-box">5</div>
+            <div class="flex-box">6</div>
+        </div>
+    </div>
+            <hr>
+
+    <div class="flex-Flow">
+        <h2 class="text">Flex Flow</h2>
+        <h3 class="text">Want both Flex Flow is the one for you</h3>
+        <h4 class="text">Flex Flow is a easier way to using both Flex-wrap and flex-Direction.
+            <br>
+            <br> flex flow uses any direction value in combination with wrap allowing you to write less code.
+            <br> Example combinations: row-reverse wrap, row wrap, row wrap-reverse, ect.
+            <br> This code uses row-reverse wrap-reverse.
+            <br>
+        </h4>
+            <div class="flex-container" id="flex-flow">
             <div class="flex-box">1</div>
             <div class="flex-box">2</div>
             <div class="flex-box">3</div>
@@ -53,28 +76,63 @@
             <br>
             <br>
             <br>
-            <hr id="hr">
+            <hr class="hr">
             <div class="text"><h1>Flex Items</h1></div>
-            <hr id="hr">
+            <hr class="hr">
 
-    <div class="flex-column">
-        <h2 class="text">Flex Column</h2>
-        <h3 class="text">Flex Column... What A Breeze!</h3>
-        <h4 class="text"> 
-            <br> 
-            <br>Flex Column changes the elements format to have the divs go from the top to the bottom of a container.
+    <div class="flex-grow">
+        <h2 class="text">Flex Grow</h2>
+        <h3 class="text">Big box? Flex grow.</h3>
+        <h4 class="text">Flex grow changes the size of an item in a container based on the other objects in the container.
             <br>
-            <br>Nothing has to be done on the users end to make a change!
+            <br>The base value of items for the flex grow value is 0. So changing another box value wont make a change.
+            <br>you need to first make the other boxes 1 before the grow value can be used.
+            <br>
         </h4>
-        <div class="flex-container" id="flex-column">
-            <div class="flex-box">1</div>
+        <div class="flex-container flex-grows">
+            <div class="flex-box" id="flex-grows">1</div>
             <div class="flex-box">2</div>
-            <div class="flex-box">3</div>
+            <div class="flex-box" id="flex-grows">3</div>
             <div class="flex-box">4</div>
-            <div class="flex-box">5</div>
+            <div class="flex-box" id="flex-grows">5</div>
             <div class="flex-box">6</div>
         </div>
     </div>
         <hr>
+
+        <div class="flex-order">
+            <h2 class="text">Flex order</h2>
+            <h3 class="text">Re-order</h3>
+            <h4 class="text">Flex order changes what order the items are in.
+                <br>
+                <br>All you have to do is add an order style property to the item you want to change.
+            </h4>
+            <div class="flex-container">
+                <div class="flex-box" style="order: 2;">1</div>
+                <div class="flex-box" style="order: 5;">2</div>
+                <div class="flex-box" style="order: 3;">3</div>
+                <div class="flex-box" style="order: 4;">4</div>
+                <div class="flex-box" style="order: 1;">5</div>
+                <div class="flex-box" style="order: 6;">6</div>
+            </div>
+        </div>
+            <hr>
+        
+            <div class="flex-basis">
+                <h2 class="text">Flex Basis</h2>
+                <h3 class="text">Basis bases the length of your box.</h3>
+                <h4 class="text">Flex basis states the initial length of a flex item
+                    <br>
+                </h4>
+                <div class="flex-container" id="flexing-box">
+                    <div class="flex-box" >1</div>
+                    <div class="flex-box" id="flex-basis">2</div>
+                    <div class="flex-box" >3</div>
+                    <div class="flex-box" id="flex-basis">4</div>
+                    <div class="flex-box" >5</div>
+                    <div class="flex-box" id="flex-basis">6</div>
+                </div>
+            </div>
+            <br>
     </body>
 </html>

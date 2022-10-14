@@ -30,15 +30,35 @@ hr {
     max-width: 10%;
 }
 
+#flex-box {
+    width: 10%;
+}
+
 #flex-wrap {
     flex-wrap: wrap;
 }
 
-#flex-column {
-    flex-direction: column;
+#flex-row-reverse {
+    flex-direction: row-reverse;
 }
 
-#hr {
+#flex-flow {
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+#flex-grows {
+    flex-grow: 2;
+}
+
+#flex-basis {
+    flex-basis: 20%;
+}
+
+.hr {
     width: 100%;
     max-width: 100%;
 }
