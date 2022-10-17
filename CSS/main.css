@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
     margin: auto;
     flex: 1;
+    transition: .2s;
 }
 
 #extra .flex-box:hover {
