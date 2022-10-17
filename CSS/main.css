@@ -7,7 +7,12 @@ hr {
     max-width: 50%;
 }
 
-.text {
+.hr {
+    width: 100%;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
     color: white;
     text-align: center;
 }
@@ -34,7 +39,7 @@ hr {
     width: 10%;
 }
 
-#flex-wrap {
+.flex-wrap {
     flex-wrap: wrap;
 }
 
@@ -50,15 +55,24 @@ hr {
     flex-grow: 1;
 }
 
-#flex-grows {
+.flex-grows {
     flex-grow: 2;
 }
 
-#flex-basis {
+.flex-basis {
     flex-basis: 20%;
 }
 
-.hr {
-    width: 100%;
+
+
+#extra .flex-box {
     max-width: 100%;
+    margin: auto;
+    flex: 1;
+}
+
+#extra .flex-box:hover {
+    flex: 2;
+    background-color: rgb(80, 28, 81);
+    transition: .4s;
 }
