@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(38, 6, 43);
+}
+
+hr {
+    max-width: 50%;
+}
+
+.hr {
+    width: 100%;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    margin: auto;
+    max-width: 50%;
+    background-color: rgb(178, 157, 255);
+    border-radius: 10px;
+    padding: 3em;
+}
+
+.flex-box {
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 1em;
+    border-radius: 5px;
+    margin: auto;
+    color: white;
+    max-width: 10%;
+}
+
+#flex-box {
+    width: 10%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+#flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+#flex-flow {
+    flex-flow: row-reverse wrap-reverse;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-grows {
+    flex-grow: 2;
+}
+
+.flex-basis {
+    flex-basis: 20%;
+}
+
+
+
+#extra .flex-box {
+    max-width: 100%;
+    margin: auto;
+    flex: 1;
+    transition: .2s;
+}
+
+#extra .flex-box:hover {
+    flex: 2;
+    background-color: rgb(80, 28, 81);
+    transition: .4s;
+}
